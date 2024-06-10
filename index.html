@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Coding By Krishna Tadi - github.com/krishnatadi -->
+<html lang="en" dir="ltr">
+<head>
+	<title>Login-Signup | Krishna Tadi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="hero">
+	<div class="form-box">
+		<div class="button-box">
+			<div id="btn"></div>
+			<button class="toogle-btn" onclick="login()" type="button">Log In</button>
+			<button class="toogle-btn" onclick="register()" type="button">Sign Up</button>
+			</div>		
+			<div class="social-icons">
+				<a href="http://www.facebook.com/" target="_blank"><i class="fab fa-facebook" style="font-size: 26px;"></i></a>
+				<a href="http://www.instagram.com/" target="_blank"><i class="fab fa-instagram" style="font-size: 26px;"></i></a>
+				<a href="http://www.x.com/" target="_blank"><i class="fab fa-twitter" style="font-size: 26px;"></i></a>
+				<a href="http://www.youtube.com/" target="_blank"><i class="fab fa-youtube" style="font-size: 26px;"></i></a>
+			</div>
+<form class="input-group" id="login" onsubmit="myFunction1()">
+	<input class="input-field" title="Enter Email" id="username"  placeholder="Email" required="" type="text" />
+	<input class="input-field" title="Enter Password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" min="8" placeholder="Enter Password" required type="password" />
+	<input class="check-box" type="checkbox" id="rememberPasswordCheckbox"/><label for="rememberPasswordCheckbox">Remember Password</label for="rememberPasswordCheckbox">
+	<button class="submit-btn" onclick="errorMessage();" type="submit">Log In</button>
+</form>
+<form class="input-group" id="register" onsubmit="myFunction2()">
+	<input class="input-field" title="Enter Full Name"  max="30" min="2" placeholder="Name" required="" type="text" />
+	<input class="input-field" title="Enter Email" placeholder="Email"  required="" type="email" />
+	<input class="input-field" title="Enter Contact Number" maxlength="10" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" placeholder="Contact Number" required="" type="text"  />
+	<input class="input-field" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter Password" required="" type="password" />
+	<input type="checkbox" class="check-box" id="agree"><label for="agree">I Agree Terms & Policies</label>
+	<button class="submit-btn" type="submit">Sign Up</button>
+</form>
+	</div>	
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>
